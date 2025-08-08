@@ -4,6 +4,11 @@
 * {
   /* outline: 1px solid red; */
 }
+html {
+  scrollbar-gutter: stable;
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -139,8 +144,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1 {
+    @apply font-bold text-xl text-accent 
+  }
 }
 
+
 .custom-container {
-  @apply mx-auto w-[97%] py-2 max-w-7xl space-y-10;
+  @apply mx-auto! w-[95%]! py-4! max-w-7xl! space-y-10!;
 }

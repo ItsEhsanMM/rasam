@@ -6,7 +6,7 @@ import { DialogTitle } from '@radix-ui/react-dialog';
 
 const SideBar = () => {
   return (
-    <DrawerContent className="w-80! px-5">
+    <DrawerContent className="w-80 px-5">
       <DrawerClose className="mt-5 flex justify-end">
         <X className="size-5" />
       </DrawerClose>
