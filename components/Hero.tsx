@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Hero = () => {
   return (
     <section className="space-y-5">
@@ -25,6 +27,13 @@ const Hero = () => {
         <div></div>
       </div>
       <div className="border-b-2 border-dotted border-black/15" />
+
+      <Image
+        src={'https://rasam.agency/wp-content/uploads/2023/05/rasam-main-aboved.webp'}
+        alt="hero image"
+        width={500}
+        height={320}
+      />
     </section>
   );
 };
