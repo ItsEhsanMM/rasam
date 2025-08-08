@@ -142,5 +142,5 @@
 }
 
 .custom-container {
-  @apply mx-auto py-2 max-w-7xl space-y-2;
+  @apply mx-auto w-[97%] py-2 max-w-7xl space-y-10;
 }
