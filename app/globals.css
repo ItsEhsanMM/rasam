@@ -4,9 +4,7 @@
 * {
   /* outline: 1px solid red; */
 }
-html {
-  scrollbar-gutter: stable;
-}
+
 
 
 @theme inline {
@@ -147,6 +145,14 @@ html {
 
   h1 {
     @apply font-bold text-xl text-accent 
+  }
+
+  h2 {
+    @apply text-lg font-bold text-accent
+  }
+
+  h3 {
+    @apply font-bold text-base
   }
 }
 
