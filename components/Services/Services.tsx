@@ -4,7 +4,7 @@ import ServicesBox from './ServicesBox';
 
 const Services = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-10">
       <div className="text-center">
         <h2>خدمات آژانس نوآوری رسام</h2>
         <span className="font-extralight">
