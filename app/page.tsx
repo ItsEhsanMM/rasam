@@ -1,5 +1,6 @@
-import Educations from '@/components/educations/Educations';
+import Educations from '@/components/Educations/Educations';
 import Hero from '@/components/Hero';
+import Plans from '@/components/Plans/Plans';
 import Process from '@/components/Process/Process';
 import RequestForm from '@/components/RequestForm/RequestForm';
 import Services from '@/components/Services/Services';
@@ -12,6 +13,7 @@ export default function Home() {
       <Process />
       <Educations />
       <RequestForm />
+      <Plans />
     </>
   );
 }

@@ -3,7 +3,7 @@ import ServicesBox from './ServicesBox';
 
 const Services = () => {
   return (
-    <div className="space-y-10">
+    <section className="space-y-10">
       <div className="text-center">
         <h2>خدمات آژانس نوآوری رسام</h2>
         <span className="font-extralight">
@@ -18,7 +18,7 @@ const Services = () => {
           }}
         />
       </div>
-    </div>
+    </section>
   );
 };
 export default Services;
