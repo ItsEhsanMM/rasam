@@ -4,7 +4,10 @@ import {
   GalleryHorizontalEnd,
   Hammer,
   House,
+  PhoneCall,
   SquareKanban,
+  UserRound,
+  UserRoundSearch,
 } from 'lucide-react';
 
 export const navlinks = [
@@ -80,32 +83,41 @@ export const plans = [
   {
     id: 0,
     price: 1,
-    title:"اقتصادی",
-    features: [
-      "دسترسی نامحدود به تمام مقالات",
-      "پشتیبانی ایمیلی در ساعات اداری"
-    ],
+    title: 'اقتصادی',
+    features: ['دسترسی نامحدود به تمام مقالات', 'پشتیبانی ایمیلی در ساعات اداری'],
   },
   {
     id: 1,
     price: 25,
-    title:"پیشرفته",
-    color:"var(--secondary)",
+    title: 'پیشرفته',
+    color: 'var(--secondary)',
     features: [
-      "همه امکانات پلن قبلی",
-      "جلسه مشاوره خصوصی یک‌ساعته",
-      "دسترسی به ویدیوهای آموزشی ویژه"
+      'همه امکانات پلن قبلی',
+      'جلسه مشاوره خصوصی یک‌ساعته',
+      'دسترسی به ویدیوهای آموزشی ویژه',
     ],
   },
   {
     id: 2,
     price: 5,
-    title:"شرکتی",
+    title: 'شرکتی',
     features: [
-      "همه امکانات پلن‌های قبلی",
-      "پشتیبانی ۲۴ ساعته تلفنی و واتساپ",
-      "عضویت در گروه VIP و رویدادهای اختصاصی",
-      "برنامه‌ریزی شخصی‌سازی شده بر اساس اهداف شما"
+      'همه امکانات پلن‌های قبلی',
+      'پشتیبانی ۲۴ ساعته تلفنی و واتساپ',
+      'عضویت در گروه VIP و رویدادهای اختصاصی',
+      'برنامه‌ریزی شخصی‌سازی شده بر اساس اهداف شما',
     ],
-  }
-]
+  },
+];
+
+export const links = [
+  { id: 0, title: 'درباره ما', icon: UserRound },
+  { id: 1, title: 'تماس با ما', icon: PhoneCall },
+  { id: 2, title: 'فرصت های شغلی', icon: UserRoundSearch },
+];
+
+export const edu = [
+  { id: 0, title: 'درباره ما', icon: UserRound },
+  { id: 1, title: 'تماس با ما', icon: PhoneCall },
+  { id: 2, title: 'فرصت های شغلی', icon: UserRoundSearch },
+];
