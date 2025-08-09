@@ -2,7 +2,6 @@ import React from 'react';
 import { Button } from '../ui/button';
 import { CircleCheck } from 'lucide-react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 
 interface Plan {
   id: number;
