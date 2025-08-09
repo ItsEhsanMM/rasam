@@ -8,7 +8,9 @@ const Plans = () => {
         <h2>پلن های قیمتی</h2>
         <span className="font-extralight">قیمت خدمات ما</span>
       </div>
-      <PlanBoxes data={plans} />
+      <div className="flex flex-col flex-wrap justify-between gap-y-10 md:flex-row">
+        <PlanBoxes data={plans} />
+      </div>
     </section>
   );
 };

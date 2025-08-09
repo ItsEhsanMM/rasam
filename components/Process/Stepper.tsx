@@ -42,11 +42,11 @@ export default function Stepper() {
 
   return (
     <div className="relative flex flex-col gap-y-10 pl-5">
-      <div className="bg-accent absolute top-0 bottom-0 left-[51.8px] w-px"></div>
+      <div className="bg-accent absolute top-0 bottom-0 left-[51.8px] w-px md:right-[32.1px]"></div>
 
       {steps.map((step, i) => (
-        <div key={i} className="flex w-full flex-row items-start justify-end">
-          <div className="ml-6 space-y-1 text-left">
+        <div key={i} className="flex w-full items-start justify-end md:flex-row-reverse">
+          <div className="ml-6 space-y-1 text-left md:mr-6 md:ml-0 md:text-right">
             <h3 className="text-accent text-lg font-bold">{step.title}</h3>
             <p className="text-text text-sm leading-relaxed font-extralight">{step.description}</p>
           </div>

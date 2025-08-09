@@ -10,22 +10,24 @@ const Process = () => {
           آماده ارائه خدمات حرفه‌ای با بیش از 7 سال تجربه کاری
         </span>
       </div>
-      <Stepper />
-      <ReactCompareSlider
-        className="compareSlider"
-        itemOne={
-          <ReactCompareSliderImage
-            src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-after.webp'}
-            alt="prototype"
-          />
-        }
-        itemTwo={
-          <ReactCompareSliderImage
-            src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-before.webp'}
-            alt="wireframe"
-          />
-        }
-      />
+      <div className="flex flex-col gap-y-10 md:flex-row">
+        <Stepper />
+        <ReactCompareSlider
+          className="size-fit"
+          itemOne={
+            <ReactCompareSliderImage
+              src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-after.webp'}
+              alt="prototype"
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-before.webp'}
+              alt="wireframe"
+            />
+          }
+        />
+      </div>
     </div>
   );
 };

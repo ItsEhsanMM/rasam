@@ -22,7 +22,7 @@ const PlanBoxes: React.FC<PlansBoxProps> = ({ data }) => {
       {data.map((plan) => (
         <div
           key={plan.id}
-          className="space-y-10 overflow-hidden rounded-lg border border-black/20 pb-5"
+          className="flex min-h-120 w-full flex-col justify-between gap-y-10 overflow-hidden rounded-lg border border-black/20 pb-5 sm:w-80 md:w-96"
         >
           <div
             className={'bg-primary relative z-0 py-5 text-center'}

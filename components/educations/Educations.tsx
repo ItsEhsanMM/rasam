@@ -10,7 +10,7 @@ const Educations = () => {
           محتوای رایگان و با کیفیت آموزشی به همراه پشتیبانی و بروزرسانی
         </span>
       </div>
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-x-5 gap-y-4 md:flex-row">
         <ServicesBox data={educations} rightText />
       </div>
     </div>

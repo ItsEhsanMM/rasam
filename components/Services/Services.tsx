@@ -10,7 +10,7 @@ const Services = () => {
           آماده ارائه خدمات حرفه‌ای با بیش از 7 سال تجربه کاری
         </span>
       </div>
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col items-center justify-between gap-x-10 gap-y-4 md:flex-row">
         <ServicesBox
           data={services}
           imageDivider={{
