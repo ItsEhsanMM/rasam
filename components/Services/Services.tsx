@@ -11,7 +11,12 @@ const Services = () => {
         </span>
       </div>
       <div className="flex flex-col gap-y-4">
-        <ServicesBox services={services} />
+        <ServicesBox
+          data={services}
+          imageDivider={{
+            className: 'size-25',
+          }}
+        />
       </div>
     </div>
   );

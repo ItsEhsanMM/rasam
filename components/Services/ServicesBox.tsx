@@ -1,4 +1,6 @@
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import React from 'react';
 
 interface Service {
   id: number;
@@ -8,20 +10,33 @@ interface Service {
 }
 
 interface ServicesBoxProps {
-  services: Service[];
+  data: Service[];
+  imageDivider?: React.HTMLAttributes<HTMLDivElement>;
+  rightText?: boolean;
 }
 
-const ServicesBox: React.FC<ServicesBoxProps> = ({ services }) => {
+const ServicesBox: React.FC<ServicesBoxProps> = ({ data, imageDivider, rightText }) => {
   return (
     <>
-      {services.map((service) => (
-        <div key={service.id} className="border-border rounded-md border p-5 text-center">
-          <div className="flex w-full items-center justify-center">
-            <Image src={service.imgUrl} alt={service.title} width={80} height={80} />
+      {data.map((service) => (
+        <div key={service.id} className="border-border space-y-5 rounded-md border p-5 text-center">
+          <div
+            {...imageDivider}
+            className={`flex w-full items-center justify-center overflow-hidden rounded-lg ${imageDivider?.className || ''}`}
+          >
+            <Image
+              className="size-full object-contain"
+              src={service.imgUrl}
+              alt={service.title}
+              width={512}
+              height={512}
+            />
           </div>
           <div className="space-y-2">
-            <h3>{service.title}</h3>
-            <p className="text-sm font-extralight">{service.description}</p>
+            <h3 className={rightText ? 'text-right' : ''}>{service.title}</h3>
+            <p className={cn('text-sm font-extralight', rightText && 'text-right')}>
+              {service.description}
+            </p>
           </div>
         </div>
       ))}

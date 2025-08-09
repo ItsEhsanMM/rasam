@@ -167,9 +167,6 @@
   opacity: 1;
 }
 
-.compareSlider::before {
-  content: 'before'
-}
 
 .custom-container {
   @apply mx-auto! w-[95%]! py-4! max-w-7xl! space-y-10!;

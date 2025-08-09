@@ -51,3 +51,27 @@ export const services = [
       'با رعایت اصول سئو در طراحی سایت می‌توانید در مدت‌زمان کوتاهی رتبه یک گوگل را از آن خود کنید.',
   },
 ];
+
+export const educations = [
+  {
+    id: 0,
+    imgUrl: 'https://rasam.agency/wp-content/uploads/2024/08/uiux-banner.webp',
+    title: 'دوره رایگان طراحی رابط و تجربه کاربری',
+    description:
+      'در این دوره ابتدا کلیاتی از مباحث UX را مطرح می‌کنیم و سپس به صورت پروژه محور، نرم‌افزار فیگما را آموزش می‌دهیم.',
+  },
+  {
+    id: 1,
+    imgUrl: 'https://rasam.agency/wp-content/uploads/2024/08/wordpress-banner.webp',
+    title: 'دوره رایگان وردپرس و المنتور',
+    description:
+      'دوره رایگان طراحی وب‌سایت به آموزش عملی و پروژه محور وردپرس، برگه‌ساز المنتور و افزونه‌های کاربردی می‌پردازد.',
+  },
+  {
+    id: 2,
+    imgUrl: 'https://rasam.agency/wp-content/uploads/2024/09/seo-course-banner.webp',
+    title: 'دوره رایگان بهینه‌سازی و سئو سایت',
+    description:
+      'در این دوره به صورت کاربردی، موضوعات سئو در 8 فصل متفاوت به همراه ابزارها، آموزش داده خواهد شد.',
+  },
+];
