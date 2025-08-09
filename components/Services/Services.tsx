@@ -1,5 +1,4 @@
 import { services } from '@/lib/const';
-import Image from 'next/image';
 import ServicesBox from './ServicesBox';
 
 const Services = () => {

@@ -1,3 +1,4 @@
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Stepper from './Stepper';
 
 const Process = () => {
@@ -10,6 +11,21 @@ const Process = () => {
         </span>
       </div>
       <Stepper />
+      <ReactCompareSlider
+        className="compareSlider"
+        itemOne={
+          <ReactCompareSliderImage
+            src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-after.webp'}
+            alt="prototype"
+          />
+        }
+        itemTwo={
+          <ReactCompareSliderImage
+            src={'https://rasam.agency/wp-content/uploads/2023/11/portfolio-before.webp'}
+            alt="wireframe"
+          />
+        }
+      />
     </div>
   );
 };

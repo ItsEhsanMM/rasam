@@ -156,6 +156,20 @@
   }
 }
 
+[data-overlay] {
+  pointer-events: none; /* don't block clicks when closed */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+[data-state="open"] ~ [data-overlay] {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.compareSlider::before {
+  content: 'before'
+}
 
 .custom-container {
   @apply mx-auto! w-[95%]! py-4! max-w-7xl! space-y-10!;
