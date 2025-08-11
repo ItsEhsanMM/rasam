@@ -1,3 +1,5 @@
+import './HoverAnimation.css';
+
 import { navlinks } from '@/lib/const';
 import { PhoneCall } from 'lucide-react';
 import Link from 'next/link';
@@ -9,7 +11,7 @@ const Navbar = () => {
       <div className="flex w-1/2 justify-between">
         {navlinks.map((link) => (
           <Link
-            className="hover:text-primary underline-offset-10 transition-all hover:underline"
+            className="hover:text-primary hover-underline-animation"
             key={link.name}
             href={link.href}
           >
@@ -22,7 +24,7 @@ const Navbar = () => {
           href={'tel:+989370814221'}
           className="bg-primary block cursor-pointer rounded-full p-1.5 text-white"
         >
-          <PhoneCall strokeWidth={1} direction={'rtl'} />
+          <PhoneCall strokeWidth={1} />
         </Link>
       </div>
     </nav>
