@@ -51,14 +51,16 @@ const PlanBoxes: React.FC<PlansBoxProps> = ({ data }) => {
               </div>
             ))}
           </div>
-          <div className="w-full text-center">
-            <Button className="p-6">ثبت سفارش</Button>
-          </div>
-          <div className="flex w-full flex-col text-center text-sm leading-6 font-light">
-            <span>یا مشاوره مستقیم با کارشناس</span>
-            <Link className="font-medium" href={'tel:+09351436046'}>
-              09351436046
-            </Link>
+          <div className="space-y-4">
+            <div className="w-full text-center">
+              <Button className="p-6">ثبت سفارش</Button>
+            </div>
+            <div className="flex w-full flex-col text-center text-sm leading-6 font-light">
+              <span>یا مشاوره مستقیم با کارشناس</span>
+              <Link className="font-medium" href={'tel:+09351436046'}>
+                09351436046
+              </Link>
+            </div>
           </div>
         </div>
       ))}
