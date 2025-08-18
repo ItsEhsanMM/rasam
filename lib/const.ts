@@ -11,24 +11,69 @@ import {
 } from 'lucide-react';
 
 export const navlinks = [
+ 
   {
-    name: 'خانه',
-    href: '/',
-    icon: House,
+    name: 'پلن های قیمتی',
+    href: 'plans',
+    icon: SquareKanban,
+    subMenu: [
+      {
+        name: 'فروشگاهی',
+      },
+      {
+        name: 'شرکتی',
+      },
+      {
+        name: 'رزرواسیون',
+      },
+      {
+        name: 'نوبت دهی',
+      },
+      {
+        name: 'آموزشی',
+      },
+      {
+        name: 'مجله ای',
+      },
+    ],
   },
-  {
-    name: 'خدمات',
-    href: 'services',
-    icon: Hammer,
-  },
-  { name: 'پلن های قیمتی', href: 'plans', icon: SquareKanban },
   {
     name: 'نمونه کار ها',
     href: 'portfolio',
     icon: GalleryHorizontalEnd,
+    subMenu: [
+      {
+        name: 'فروشگاهی',
+      },
+      {
+        name: 'شرکتی',
+      },
+      {
+        name: 'رزرواسیون',
+      },
+      {
+        name: 'نوبت دهی',
+      },
+      {
+        name: 'آموزشی',
+      },
+      {
+        name: 'مجله ای',
+      },
+    ],
   },
   { name: 'درباره ما', href: 'about-us', icon: EqualApproximately },
   { name: 'تماس با ما', href: 'contact-us', icon: Contact },
+   {
+    name: 'سوالات متداول',
+    href: '/',
+    icon: House,
+  },
+  {
+    name: 'وبلاگ',
+    href: 'services',
+    icon: Hammer,
+  },
 ];
 
 export const services = [
@@ -37,21 +82,27 @@ export const services = [
     imgUrl: 'https://rasam.agency/wp-content/uploads/2024/03/gif-shop-web.gif',
     title: 'طراحی وب سایت و فروشگاه',
     description:
-      'راه‌اندازی سایت اولین قدم برای رشد کسب‌وکارها است. با طراحی سایت اصولی از رقبا پیشی بگیرید.',
+      'فروشگاه اینترنتی اختصاصی بسازید و محصولات خود را به مشتریان بیشتری در سراسر کشور عرضه کنید.',
   },
   {
     id: 1,
     imgUrl: 'https://rasam.agency/wp-content/uploads/2024/03/gif-design.gif',
     title: 'طراحی رابط کاربری (UI/UX)',
     description:
-      'طراحی رابط کاربری UI/UX بهترین نقشه راه برای طراحی یک سایت جذاب با تجربه کاربری بالا است.',
+      'رابط کاربری چشم‌نواز و تجربه‌ای روان برای افزایش رضایت و ماندگاری کاربران ایجاد کنید.',
   },
   {
     id: 2,
+    imgUrl: null,
+    title: 'برگزاری دوره‌های آموزشی',
+    description: 'مهارت‌های تخصصی خود را در حوزه طراحی وب، سئو و دیجیتال مارکتینگ گسترش دهید.',
+  },
+  {
+    id: 3,
     imgUrl: 'https://rasam.agency/wp-content/uploads/2024/03/gif-seo.gif',
-    title: 'بهینه سازی و SEO',
+    title: 'بهینه‌سازی سئو',
     description:
-      'با رعایت اصول سئو در طراحی سایت می‌توانید در مدت‌زمان کوتاهی رتبه یک گوگل را از آن خود کنید.',
+      'اصول سئو را به کار بگیرید تا در نتایج گوگل جایگاه برتر کسب کنید و مشتریان بیشتری جذب نمایید.',
   },
 ];
 
