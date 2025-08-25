@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="hidden w-full items-center justify-between md:flex">
       <div>LOGO</div>
-      <NavigationMenu>
+      <NavigationMenu dir="rtl">
         <NavigationMenuList>
           {navlinks.map((link) => {
             return (
@@ -26,9 +26,9 @@ const Navbar = () => {
                   <>
                     <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      <ul className="flex w-48 flex-col gap-2 p-4">
                         {link.subMenu.map((sub) => (
-                          <li key={sub.name} className="w-fit">
+                          <li key={sub.name} className="text-center">
                             <NavigationMenuLink asChild>
                               <Link
                                 className="hover:text-primary hover-underline-animation"
