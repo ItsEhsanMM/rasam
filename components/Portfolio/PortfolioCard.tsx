@@ -46,13 +46,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ items }) => {
         >
           <div className="rounded-xl bg-white p-4 shadow-sm">
             <div className="mb-3 h-40 w-full overflow-hidden rounded-lg bg-gray-100">
-              <Image
-                width={256}
-                height={256}
-                src={item.image}
-                alt={item.title}
-                className="h-full w-full object-cover"
-              />
+              <img src={item.image} alt={item.title} className="h-full w-full object-cover" />
             </div>
             <h3 className="mb-2 text-lg font-bold text-gray-900">{item.title}</h3>
             <div className="mb-4 flex gap-2 text-xs text-gray-600">

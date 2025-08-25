@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import { CircleCheck } from 'lucide-react';
 import Link from 'next/link';
 
-interface Plan {
+export interface Plan {
   id: number;
   price: number;
   title: string;

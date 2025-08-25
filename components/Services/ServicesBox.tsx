@@ -4,7 +4,7 @@ import React from 'react';
 
 interface Service {
   id: number;
-  imgUrl: string;
+  imgUrl: string | null;
   title: string;
   description: string;
 }
@@ -24,12 +24,10 @@ const ServicesBox: React.FC<ServicesBoxProps> = ({ data, imageDivider, rightText
             {...imageDivider}
             className={`flex w-full items-center justify-center overflow-hidden rounded-lg ${imageDivider?.className || ''}`}
           >
-            <Image
+            <img
               className="size-full object-contain"
-              src={service.imgUrl}
+              src={service.imgUrl || ''}
               alt={service.title}
-              width={512}
-              height={512}
             />
           </div>
           <div className="space-y-2">

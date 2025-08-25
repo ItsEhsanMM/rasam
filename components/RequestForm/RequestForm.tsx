@@ -5,14 +5,12 @@ const RequestForm = () => {
   return (
     <section className="relative flex justify-end space-y-5 overflow-hidden rounded-xl bg-[#19BAC726] bg-[url('https://rasam.agency/wp-content/uploads/2021/12/pattern-svg.svg')] bg-right p-5">
       <div className="absolute top-0 right-0 hidden md:block lg:-top-10 lg:right-20">
-        <Image
+        <img
           src={
             'https://rasam.agency/wp-content/uploads/elementor/thumbs/person-consultant-qlwc4dqzpanxyvoamdrcc84mfc79di9vi6zuef8e0w.webp'
           }
           alt="man with glasses"
           className="size-60 lg:size-80"
-          width={400}
-          height={400}
         />
       </div>
       <div className="md:w-2/3">

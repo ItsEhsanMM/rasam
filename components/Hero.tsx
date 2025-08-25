@@ -46,12 +46,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <Image
+      <img
         src={'https://rasam.agency/wp-content/uploads/2023/05/rasam-main-aboved.webp'}
         alt="hero image"
         className="size-full object-cover md:size-2/3"
-        width={500}
-        height={320}
       />
     </section>
   );

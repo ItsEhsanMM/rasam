@@ -65,22 +65,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<'li'> & { href: string }) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link className="hover:text-primary hover-underline-animation" href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">{children}</p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  );
-}
 export default Navbar;
