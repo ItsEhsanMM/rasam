@@ -133,13 +133,11 @@ export const educations = [
 export const plans = [
   {
     id: 0,
-    price: 1,
     title: 'اقتصادی',
     features: ['دسترسی نامحدود به تمام مقالات', 'پشتیبانی ایمیلی در ساعات اداری'],
   },
   {
     id: 1,
-    price: 25,
     title: 'پیشرفته',
     color: 'var(--secondary)',
     features: [
@@ -150,7 +148,6 @@ export const plans = [
   },
   {
     id: 2,
-    price: 5,
     title: 'شرکتی',
     features: [
       'همه امکانات پلن‌های قبلی',
@@ -171,4 +168,148 @@ export const edu = [
   { id: 0, title: 'درباره ما', icon: UserRound },
   { id: 1, title: 'تماس با ما', icon: PhoneCall },
   { id: 2, title: 'فرصت های شغلی', icon: UserRoundSearch },
+];
+
+
+export const portfolioData = [
+  {
+    id: 1,
+    title: "UI Kit مدیریت پروژه",
+    image: "/images/ui-project.jpg",
+    category: "UI/UX",
+    team: "تیم آلفا",
+  },
+  {
+    id: 2,
+    title: "اپلیکیشن فروشگاه آنلاین",
+    image: "/images/store-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم بتا",
+  },
+  {
+    id: 3,
+    title: "وبسایت رستوران",
+    image: "/images/restaurant.jpg",
+    category: "وبسایت",
+    team: "تیم گاما",
+  },
+  {
+    id: 4,
+    title: "داشبورد آنالیز داده",
+    image: "/images/data-dashboard.jpg",
+    category: "UI/UX",
+    team: "تیم دلتا",
+  },
+  {
+    id: 5,
+    title: "اپلیکیشن تناسب اندام",
+    image: "/images/fitness-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم اسپورت",
+  },
+  {
+    id: 6,
+    title: "وبسایت شرکتی مدرن",
+    image: "/images/corporate.jpg",
+    category: "وبسایت",
+    team: "تیم وِرا",
+  },
+  {
+    id: 7,
+    title: "اپلیکیشن یادداشت برداری",
+    image: "/images/note-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم نوتا",
+  },
+  {
+    id: 8,
+    title: "UI Kit اپلیکیشن مالی",
+    image: "/images/finance-ui.jpg",
+    category: "UI/UX",
+    team: "تیم فایننس",
+  },
+  {
+    id: 9,
+    title: "وبسایت نمونه کار شخصی",
+    image: "/images/portfolio.jpg",
+    category: "وبسایت",
+    team: "تیم پرسونال",
+  },
+  {
+    id: 10,
+    title: "اپلیکیشن چت و پیام‌رسان",
+    image: "/images/chat-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم مسیج",
+  },
+  {
+    id: 11,
+    title: "UI Kit آموزش آنلاین",
+    image: "/images/elearning-ui.jpg",
+    category: "UI/UX",
+    team: "تیم اِدو",
+  },
+  {
+    id: 12,
+    title: "وبسایت فروش دوره آموزشی",
+    image: "/images/edu-site.jpg",
+    category: "وبسایت",
+    team: "تیم لرن",
+  },
+  {
+    id: 13,
+    title: "اپلیکیشن مدیریت وظایف",
+    image: "/images/tasks-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم اورگانایزر",
+  },
+  {
+    id: 14,
+    title: "UI Kit شبکه اجتماعی",
+    image: "/images/social-ui.jpg",
+    category: "UI/UX",
+    team: "تیم سوشال",
+  },
+  {
+    id: 15,
+    title: "وبسایت گردشگری",
+    image: "/images/travel-site.jpg",
+    category: "وبسایت",
+    team: "تیم تراول",
+  },
+  {
+    id: 16,
+    title: "اپلیکیشن موسیقی",
+    image: "/images/music-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم موزیک",
+  },
+  {
+    id: 17,
+    title: "UI Kit اپلیکیشن سلامتی",
+    image: "/images/health-ui.jpg",
+    category: "UI/UX",
+    team: "تیم هلث",
+  },
+  {
+    id: 18,
+    title: "وبسایت خبری",
+    image: "/images/news-site.jpg",
+    category: "وبسایت",
+    team: "تیم نیوز",
+  },
+  {
+    id: 19,
+    title: "اپلیکیشن رزرو هتل",
+    image: "/images/hotel-app.jpg",
+    category: "اپلیکیشن",
+    team: "تیم هتلینگ",
+  },
+  {
+    id: 20,
+    title: "UI Kit فروشگاه آنلاین",
+    image: "/images/shop-ui.jpg",
+    category: "UI/UX",
+    team: "تیم شاپ",
+  },
 ];
